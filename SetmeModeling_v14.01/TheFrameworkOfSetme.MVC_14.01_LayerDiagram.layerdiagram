@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5d02cd13-6070-4870-91d3-eb6ea7327365" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="6bc826ef-cc0e-4fa3-aeb7-0feb0145e01a" name="展示层">
+      <childLayers>
+        <layer Id="e73862d9-e4fa-4840-aeb1-b6c7b27a9def" name="Web UI">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="7affb08c-0ee3-4eea-a9f4-7a0be707d440" direction="Forward">
+              <layerMoniker Id="e058140e-8504-4bf6-af10-61a352888f67" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="5686c5aa-5f65-4d7f-9720-905d07d3ea77" name="Windows UI">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="5687f7c2-91cf-4214-9c04-2d529c53c7bc" direction="Forward">
+              <layerMoniker Id="e058140e-8504-4bf6-af10-61a352888f67" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="e058140e-8504-4bf6-af10-61a352888f67" name="WCF" />
+      </childLayers>
+    </layer>
+    <layer Id="106807ea-709b-4a68-af42-9d1818ab4adb" name="领域层">
+      <childLayers>
+        <layer Id="4be007de-1dab-4346-ac36-66b0a64838a7" name="Model" />
+        <layer Id="782c2a49-eb53-4387-8414-fbf6cd826d8e" name="Service" />
+        <layer Id="477b1d43-bd21-42ec-82c4-7cc43d0d5dc5" name="Repository" />
+      </childLayers>
+    </layer>
+    <layer Id="e0584fb1-9899-4432-b483-c706e440dbbd" name="数据持久化" />
+    <layer Id="2eae2b3c-b550-4f06-bcf3-b844654a0cbe" name="Infrastructure&#xD;&#xA;" />
+  </layers>
+</layerModel>
