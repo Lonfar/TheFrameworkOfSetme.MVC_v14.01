@@ -85,5 +85,7 @@ Global
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
 		$0.VersionControlPolicy = $2
 		$0.ChangeLogPolicy = $3
+		$3.UpdateMode = ProjectRoot
+		$0.StandardHeader = $4
 	EndGlobalSection
 EndGlobal
