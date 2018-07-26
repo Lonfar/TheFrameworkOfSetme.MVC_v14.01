@@ -9,7 +9,9 @@ namespace Setme.Domain.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Employee()
         {
+#pragma warning disable RECS0021 // 就构造函数中发生的对虚拟成员函数的调用发出警告
             this.Role = new HashSet<Role>();
+#pragma warning restore RECS0021 // 就构造函数中发生的对虚拟成员函数的调用发出警告
         }
 
         [Display(Name = "用户名")]

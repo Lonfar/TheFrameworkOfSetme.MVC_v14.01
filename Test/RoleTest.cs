@@ -1,18 +1,17 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Setme.Domain.Model;
 using Setme.Domain.Service;
 
-namespace Setme.Web.Tests
+namespace Test
 {
-    [TestClass]
+    
     public class RoleTest
     {
-        [TestMethod]
+        
         public void TestCreateRole()
         {
             var role = Role.CreateRole("Administrator", "System Administrator");
-            IRoleService roleService = new RoleService();
+            IRoleService roleService = new Setme.Domain.Service.RoleService();
             roleService.CreateRole(role);
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Setme.Domain.Model
@@ -8,7 +9,9 @@ namespace Setme.Domain.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Role()
         {
+#pragma warning disable RECS0021 // 就构造函数中发生的对虚拟成员函数的调用发出警告
             this.Employee = new HashSet<Employee>();
+#pragma warning restore RECS0021 // 就构造函数中发生的对虚拟成员函数的调用发出警告
             Order = 0;
             Open = EnumStatus.OpenStatus.Off;
         }
@@ -38,7 +41,7 @@ namespace Setme.Domain.Model
         /// <param name="_RoleName"></param>
         /// <param name="_RoleDescription"></param>
         /// <returns></returns>
-        public static Role CreateRole(string _RoleName, string _RoleDescription)
+        public  Role CreateRole(string _RoleName, string _RoleDescription)
         {
             Role role = new Role();
             role.RoleName = _RoleName;
